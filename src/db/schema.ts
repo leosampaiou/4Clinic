@@ -67,6 +67,8 @@ export const verificationsTable = pgTable("verifications", {
 export const clinicsTable = pgTable("clinics", {
   id: uuid("id").defaultRandom().primaryKey(),
   name: text("name").notNull(),
+  address: text("address").notNull(),
+  phone: text("phone").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   updatedAt: timestamp("updated_at")
     .defaultNow()
