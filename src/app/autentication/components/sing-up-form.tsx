@@ -64,7 +64,9 @@ const SignUpForm = () => {
           }
 
           toast.error("Erro ao criar conta");
+          
         },
+
       },
     );
   }
