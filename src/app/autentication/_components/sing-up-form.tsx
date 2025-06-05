@@ -55,7 +55,7 @@ const SignUpForm = () => {
       },
       {
         onSuccess: () => {
-          router.push("/dashboard");
+          router.push("/clinic-form");
         },
         onError: (ctx) => {
           if (ctx.error.code === "USER_ALREADY_EXISTS") {
@@ -64,9 +64,7 @@ const SignUpForm = () => {
           }
 
           toast.error("Erro ao criar conta");
-          
         },
-
       },
     );
   }
